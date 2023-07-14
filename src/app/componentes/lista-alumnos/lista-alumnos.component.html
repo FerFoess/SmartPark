@@ -1,0 +1,24 @@
+<p>lista-alumnos works!</p>
+<table class="table" style="width: 100%;">
+   <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Género</th>
+            <th>Acciones</th>
+        </tr>
+   </thead> 
+   <tbody>
+        <tr *ngFor="let item of alumnosData">
+            <td>{{item._id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.age}}</td>
+            <td>{{item.gender}}</td>
+            <td>
+                <button mat-fab color="accent">Accent</button>
+                <button mat-fab color="warn">Warn</button>
+            </td>
+        </tr>
+   </tbody>
+</table>
